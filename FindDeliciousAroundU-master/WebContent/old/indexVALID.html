@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Find Delicious Aroung You">
+  <meta name="author" content="Your Name">
+  <title>Find Delicious Around You</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="styles/new.css">
+</head>
+<body>
+  <header class="top-header">
+      <div class="top-header-left">
+        <i id="avatar" class="avatar fa fa-user fa-2x"></i>
+        <span id="welcome-msg">Welcome,</span>
+<!--          <a id="logout-link" href="logout">Logout</a> -->
+      </div>
+      <nav class="top-nav">
+        <a href="#"><i class="fas fa-home"></i> Home</a>
+        <a href="#"><i class="fas fa-phone"></i> Contact</a>
+        <a href="#"><i class="fas fa-info-circle"></i> About</a>
+      </nav>
+  </header>
+  
+  <div class="container">
+
+      <header class="banner">
+        <!-- top banner-->
+        <div class="top-banner">
+          <div class="container-banner">
+            <div class="container-left">
+<!--
+              <ul>
+                <li><a href="#">Welcome,</a></li>
+                <li><a href="#" id="username"> Customer</a></li>
+              </ul>
+-->
+            </div>
+<!--
+            <div class="container-right">
+              <ul>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fab fa-weixin"></i></a></li>
+              </ul>
+            </div>
+-->
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <!-- banner header -->
+        <div class="banner-header">
+          <div class="banner-nav">
+            <span id="logo"><a href="#">Find Delicious</a></span>
+          </div>
+          <div class="clearfix"></div>
+          <!--        </div>-->
+        </div>
+        <!-- banner slider-->
+        <div class="banner-slider">
+          <div class="banner-slider-container">
+            <div class="slider">
+              <div class="my-slides">
+                <h2>Nearby</h2>
+                <p>Find all the delicious around you.<br></p>
+                <a href="#">Get Started!</a>
+              </div>
+
+              <div class="my-slides">
+                <h2>Favorite</h2>
+                <p>Find your favoirte restaurants.</p>
+                <a href="#">Get Started!</a>
+              </div>
+
+              <div class="my-slides">
+                <h2>Recommendation</h2>
+                <p>Find more options.</p>
+
+                <a href="#">Get Started!</a>
+              </div>
+            </div>
+            <script>
+              var slideIndex = 0;
+              runSlide();
+
+              function runSlide() {
+                var i;
+                var x = document.getElementsByClassName("my-slides");
+
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {
+                  slideIndex = 1;
+                }
+                x[slideIndex - 1].style.display = "block";
+                setTimeout(runSlide, 3000);
+              }
+            </script>
+          </div>
+        </div>
+      </header>
+
+    <section class="main-section">
+<!--     	<div id="login-form"> -->
+<!-- 	 	    <label for="username">Username:</label> -->
+<!-- 	 	    <input id="username" name="username" type="text"> -->
+<!-- 	 	    <label for="password">Password:</label> -->
+<!-- 	 	    <input id="password" name="password" type="password"> -->
+<!-- 	 	    <button id="login-btn">Login</button> -->
+<!-- 	 	    <p id="login-error"></p> -->
+<!--         </div> -->
+    	
+    
+      <aside id="item-nav">
+        <div class="nav-icon">
+          <i class="fa fa-sitemap fa-2x"></i>
+        </div>
+        <nav class="main-nav">
+          <a href="#" id="nearby-btn" class="main-nav-btn active">
+            <i class="fa fa-map-marker"></i> Nearby
+          </a>
+          <a href="#" id="fav-btn" class="main-nav-btn">
+            <i class="fa fa-heart"></i> My Favorites
+          </a>
+          <a href="#" id="recommendation-btn" class="main-nav-btn">
+            <i class="fa fa-thumbs-up"></i> Recommendation
+          </a>
+        </nav>
+      </aside>
+
+      <ul id="item-list">
+        <li class="item">
+          <img alt="item image" src="https://s3-media3.fl.yelpcdn.com/bphoto/EmBj4qlyQaGd9Q4oXEhEeQ/ms.jpg" />
+          <div>
+            <a class="item-name" href="#">Item</a>
+            <p class="item-category">Vegetarian</p>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+          <p class="item-address">699 Calderon Ave<br/>Mountain View<br/> CA</p>
+          <div class="fav-link">
+            <i class="fas fa-heart"></i>
+          </div>
+        </li>
+      </ul>
+    </section>  
+  </div>
+  
+ <footer>
+<!--     <p class="title">What We Do</p> -->
+<!--     <p>"Help you find the best place around."</p> -->
+<!--     <ul> -->
+<!--       <li> -->
+<!--         <p><i class="fa fa-map-o fa-2x"></i></p> -->
+<!--         <p>LaiOffer office, CA</p> -->
+<!--       </li> -->
+<!--       <li> -->
+<!--         <p><i class="fa fa-envelope-o fa-2x"></i></p> -->
+<!--         <p>info@laioffer.com</p> -->
+<!--       </li> -->
+<!--       <li> -->
+<!--         <p><i class="fa fa-phone fa-2x"></i></p> -->
+<!--         <p>+1 800 123 456</p> -->
+<!--       </li> -->
+<!--     </ul> -->
+
+	  <a href="index.html" id="to-top">
+        <span id="to-top-hover"></span>
+        "to top"
+      </a>
+      <div class="footer-container">
+        <div class="footer-grids">
+          <div class="footer-grid">
+            <div class="footer-grid-header">
+              <h4>Address</h4>
+            </div>
+            <div class="footer-grid-info">
+              <p>11551 Ohio Avenue,<br>
+                <span>Los Angeles, CA</span></p>
+              <p><i class="fas fa-phone"></i> +1 111 111 1111</p>
+              <p><i class="fas fa-envelope-square"></i> yuhanlong1994@gmail.com</p>
+            </div>
+          </div>
+          <div class="footer-grid">
+            <div class="footer-grid-header">
+              <h4>Navigation</h4>
+            </div>
+            <div class="footer-grid-info">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Nearby</a></li>
+                <li><a href="#">Favorite</a></li>
+                <li><a href="#">Recommendations</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-grid">
+            <div class="footer-grid-header">
+              <h4>Follow</h4>
+            </div>
+            <div class="footer-grid-info">
+              <ul id="follow">
+                <li><i class="fab fa-facebook-square"></i></li>
+                <li><i class="fab fa-twitter-square"></i></li>
+                <li><i class="fab fa-google-plus"></i></li>
+                <li><i class="fab fa-weixin"></i></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-grid">
+            <div class="footer-grid-header">
+              <h4>Subscribe</h4>
+            </div>
+            <div class="footer-grid-info">
+              <form action="#" method="post">
+                <input type="email" id="subscribe-email" name="EMAIL"
+                       placeholder="Enter your email here" required>
+                <input type="submit" value="Subscribe">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  </footer> 
+  
+  <script src="https://rawgit.com/emn178/js-md5/master/build/md5.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
